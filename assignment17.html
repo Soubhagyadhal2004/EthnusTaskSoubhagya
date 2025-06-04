@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repeat Statement</title>
+</head>
+<body>
+
+  <h2>Repeat a Statement</h2>
+
+  <label>How many times?</label>
+  <input type="number" id="count" min="1" />
+  <button onclick="repeatStatement()">Print</button>
+
+  <div id="output"></div>
+
+  <script>
+    function repeatStatement() {
+      const times = parseInt(document.getElementById("count").value);
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = ""; // Clear previous output
+
+      if (isNaN(times) || times < 1) {
+        outputDiv.innerText = "Please enter a valid positive number.";
+        return;
+      }
+
+      for (let i = 1; i <= times; i++) {
+        outputDiv.innerHTML += "This is statement number " + i + "<br>";
+      }
+    }
+  </script>
+
+</body>
+</html>

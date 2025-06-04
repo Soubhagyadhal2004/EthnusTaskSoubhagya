@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External Css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Internal Css -->
+        
+
+    <style type="text/css">
+        body{
+            background-image: url("file:///D:/Html%20Codes/Ethnus%20Full%20Stack/Html/IMG_20240501_171232_769%20(2).jpg");
+            background-size: 530px 800px;
+            background-repeat: repeat-x;
+            margin-left: 20px;
+        }
+        .hidden{
+            display:block;
+            width: 100%;
+            height: 100%;
+            background-color: lightgreen;
+            text-align: center;
+            overflow: hidden;
+        }
+        .auto {
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+            text-align: center;
+            overflow: auto;
+        }
+        .scroll {
+            width: 100%;
+            height: 100%;
+            background-color: lightcoral;
+            text-align: center;
+            overflow: scroll;
+        }
+        .visible {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: lightyellow;
+            text-align: center;
+            overflow: visible;
+        }
+        canvas {
+            border:1px solid #000000;
+            background-color: #ffffff;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        p{
+                color: blue;
+                font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <h1>Hello Soubhagya</h1>
+
+    <!-- <table border="10" bgcolor="red" borderColor="yellow" height="600px" width="600px" cellpadding="1" cellspacing="10" align="center">
+        <tr bgcolor="blue" align="center">
+            <th>Column 1</th>
+            <th>Column 2</th>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue" align="center">Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Amirullah</td>
+            <td>Firullah</td>
+        </tr>
+        <tr>
+            <td>Abdullah</td>
+            <td>Masudullah</td>
+        </tr> -->
+
+
+
+
+
+
+
+
+        <!-- <h1>Unordered List</h1>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <h1>Ordered List</h1>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+        <h1>Definition List</h1>
+        <dl>
+            <dt>Term 1</dt>
+            <dd>Description for Term 1</dd>
+            <dt>Term 2</dt>
+            <dd>Description for Term 2</dd>
+            <dt>Term 3</dt>
+            <dd>Description for Term 3</dd>
+        </dl>
+        <h1>Nested List</h1>
+        <ul>
+            <li>Parent Item
+                <ul>
+                    <li>Child Item 1</li>
+                    <li>Child Item 2</li>
+                </ul>
+            </li>
+            <li>Another Parent Item</li>
+                <ul>
+                    <li>Child Item 3</li>
+                    <li>Child Item 4</li>
+                </ul>
+            </li>
+        </ul> -->
+
+
+
+
+
+        <!-- <p>Click the following link</p>
+            <a href="https://www.google.com" >Google</a> 
+            
+            
+            target="_blank":opens link in new window or tab
+         _self: opens in same frame
+         _parent:opens in parent frame
+         _top: opens in full body of window
+         _framename: opens in named iframe -->
+
+
+
+
+
+         <!-- attributes of <body> :
+            bgcolor-sets background color of page
+            text-sets a color of body text
+            alink- sets color for active links or selected links
+            link- sets a color for linked text
+            vlink- sets a color for visited links-->
+
+        
+        
+        <!-- <p> Click the following link</p>
+        <a href="https://www.google.com" target="_self">Google</a>
+        <br>
+        <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="Flower Image" width="150" height="150"> -->
+
+
+
+
+        <!-- <p text="red" bgcolor="red">Welcome to Html Colors <br> Use different color names for body and table and see the result.</p>
+        <table bgcolor="black">
+            <tr>
+                <td>
+                    <font color="red">
+                        This text will appear red in black background
+                    </font>
+                </td>
+            </tr>
+        </table> -->
+
+
+
+
+    <!-- <h2>Audio Player</h1>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>Video Player</h2>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="200" height="100" >
+        This text is displayed if the browser does not support HTML5 canvas.
+    </canvas> -->
+
+
+
+
+        
+        <!-- <div class="auto">
+            <h1>Welcome to My Web Page</h1>
+            <p>This is a simple HTML page with some basic elements.</p>
+            <p>Enjoy exploring!</p>
+        </div>
+        <div class="hidden">
+            <h1>Hidden Content</h1>
+            <p>This content is hidden by default.</p>
+            <p>Click the button to show it.</p>
+        </div>
+        <div class="scroll">
+            <h1>Scrollable Content</h1>
+            <p>This content is scrollable.</p>
+            <p>Scroll down to see more content.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="visible">
+            <h1>Visible Content</h1>
+            <p>This content is always visible.</p>
+            <p>It does not require scrolling or any interaction to be seen.</p>
+        </div> -->
+
+
+
+        
+
+        
+        
+
+
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 200px;
+      display: block;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Marks for Subjects</h2>
+
+  <label>Math:</label>
+  <input type="number" id="math" min="0" max="100" />
+
+  <label>Science:</label>
+  <input type="number" id="science" min="0" max="100" />
+
+  <label>English:</label>
+  <input type="number" id="english" min="0" max="100" />
+
+  <button onclick="calculateGrade()">Get Grade</button>
+
+  <div class="result" id="output"></div>
+
+  <script>
+    function calculateGrade() {
+      const math = parseFloat(document.getElementById('math').value);
+      const science = parseFloat(document.getElementById('science').value);
+      const english = parseFloat(document.getElementById('english').value);
+
+      if (isNaN(math) || isNaN(science) || isNaN(english)) {
+        document.getElementById('output').innerText = 'Please enter all marks.';
+        return;
+      }
+
+      const total = math + science + english;
+      const average = total / 3;
+      let grade = '';
+
+      if (average >= 90) grade = 'A';
+      else if (average >= 80) grade = 'B';
+      else if (average >= 70) grade = 'C';
+      else if (average >= 60) grade = 'D';
+      else grade = 'F';
+
+      document.getElementById('output').innerText = 
+        `Average Marks: ${average.toFixed(2)} → Grade: ${grade}`;
+    }
+  </script>
+
+</body>
+</html> -->

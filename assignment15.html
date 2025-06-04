@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Grade Calculator</title>
+</head>
+<body>
+
+  <h2>Enter Marks:</h2>
+
+  <label>Math: <input type="number" id="math" /></label><br><br>
+  <label>Science: <input type="number" id="science" /></label><br><br>
+  <label>English: <input type="number" id="english" /></label><br><br>
+
+  <button onclick="calculateGrade()">Get Grade</button>
+
+  <p id="output"></p>
+
+  <script>
+    function calculateGrade() {
+      const math = parseFloat(document.getElementById("math").value);
+      const science = parseFloat(document.getElementById("science").value);
+      const english = parseFloat(document.getElementById("english").value);
+
+      if (isNaN(math) || isNaN(science) || isNaN(english)) {
+        document.getElementById("output").innerText = "Please enter valid marks for all subjects.";
+        return;
+      }
+
+      const average = (math + science + english) / 3;
+      let grade;
+
+      if (average >= 90) grade = "A";
+      else if (average >= 80) grade = "B";
+      else if (average >= 70) grade = "C";
+      else if (average >= 60) grade = "D";
+      else grade = "F";
+
+      document.getElementById("output").innerText = `Average: ${average.toFixed(2)}, Grade: ${grade}`;
+    }
+  </script>
+
+</body>
+</html>

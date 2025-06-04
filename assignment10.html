@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation Bars</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    /* Vertical Navigation Bar */
+    .vertical-nav {
+      width: 150px;
+      background-color: lightblue;
+      border: 2px solid gray;
+    }
+
+    .vertical-nav a {
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+      border-bottom: 1px solid white;
+    }
+
+    .vertical-nav a:first-child {
+      background-color: orange;
+      color: white;
+    }
+
+    /* Horizontal Navigation Bar */
+    .horizontal-nav {
+      display: flex;
+      border: 2px solid gray;
+    }
+
+    .horizontal-nav a {
+      padding: 12px 20px;
+      text-decoration: none;
+      border-right: 1px solid gray;
+      color: blue;
+      font-weight: bold;
+    }
+
+    .horizontal-nav a:first-child {
+      background-color: gray;
+      color: white;
+    }
+
+    .horizontal-nav a:last-child {
+      border-right: none;
+    }
+
+    /* Title styling */
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vertical Navigation Bar -->
+  <div>
+    <div class="section-title">Vertical Navigation Bar</div>
+    <div class="vertical-nav">
+      <a href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML</a>
+      <a href="#">Bootstrap</a>
+    </div>
+  </div>
+
+  <!-- Horizontal Navigation Bar -->
+  <div>
+    <div class="section-title">Horizontal Navigation Bar</div>
+    <div class="horizontal-nav">
+      <a href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+    </div>
+  </div>
+
+</body>
+</html>

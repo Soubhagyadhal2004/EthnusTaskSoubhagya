@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested List Example</title>
+  <style>
+    .coffee{
+      margin-left: 20px;
+    }
+    .tea{
+      margin-left: 20px;
+    }
+    .milk{
+      margin-left: 20px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+<table border="1" cellpadding="10" cellspacing="0">
+  <tr>
+  
+<table border="2"  borderColor="Black" height="" width="" cellpadding="1" cellspacing="1">
+    <tr bgcolor="white">
+      <td>
+      <h3>Lists can be nested (list inside list):</h3>
+        <ul>
+          <li class="coffee">Coffee</li>
+          <li class="tea">Tea
+            <ul>
+              <li>Black tea</li>
+              <li>Green tea</li>
+            </ul>
+          </li>
+          <li class="milk">Milk</li>
+        </ul>
+      </td>
+    </tr>
+</table>
+</body>
+</html>
